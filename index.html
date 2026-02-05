@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine’s</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- HEART CURTAIN (covers the page at first) -->
+  <div id="curtain">
+    <div class="curtain-text">
+      <h1>Tap to open 💘</h1>
+      <p>(I made this for you)</p>
+    </div>
+  </div>
+
+  <!-- THE REAL PAGE (underneath) -->
+  <main>
+    <h1>Hello</h1>
+    <p>This is my first website.</p>
+  </main>
+
+  <script>
+    const curtain = document.getElementById("curtain");
+    curtain.addEventListener("click", () => {
+      curtain.classList.add("open");
+    });
+  </script>
+
+</body>
+
+</html>
